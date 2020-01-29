@@ -1,27 +1,27 @@
 [submodule "terabizcloud-main"]
 	path = terabizcloud-main
-	url = git@github.com:rednavis/terabizcloud-main.git
+	url = https://github.com/rednavis/terabizcloud-main.git
 [submodule "terabizcloud-workflow"]
 	path = terabizcloud-workflow
-	url = git@github.com:rednavis/terabizcloud-workflow.git
+	url = https://github.com/rednavis/terabizcloud-workflow.git
 [submodule "terabizcloud-reports"]
 	path = terabizcloud-reports
-	url = git@github.com:rednavis/terabizcloud-reports.git
+	url = https://github.com/rednavis/terabizcloud-reports.git
 [submodule "terabizcloud-messaging"]
 	path = terabizcloud-messaging
-	url = git@github.com:rednavis/terabizcloud-messaging.git
+	url = https://github.com/rednavis/terabizcloud-messaging.git
 [submodule "terabizcloud-core"]
 	path = terabizcloud-core
-	url = git@github.com:rednavis/terabizcloud-core.git
+	url = https://github.com/rednavis/terabizcloud-core.git
 [submodule "terabizcloud-client-portal"]
 	path = terabizcloud-client-portal
-	url = git@github.com:rednavis/terabizcloud-client-portal.git
+	url = https://github.com/rednavis/terabizcloud-client-portal.git
 [submodule "terabizcloud-batch"]
 	path = terabizcloud-batch
-	url = git@github.com:rednavis/terabizcloud-batch.git
+	url = https://github.com/rednavis/terabizcloud-batch.git
 [submodule "terabizcloud-auth"]
 	path = terabizcloud-auth
-	url = git@github.com:rednavis/terabizcloud-auth.git
+	url = https://github.com/rednavis/terabizcloud-auth.git
 [submodule "terabizcloud-admin"]
 	path = terabizcloud-admin
-	url = git@github.com:rednavis/terabizcloud-admin.git
+	url = https://github.com/rednavis/terabizcloud-admin.git
