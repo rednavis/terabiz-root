@@ -1,0 +1,15 @@
+task clean {
+    dependsOn gradle.includedBuild('terabizcloud-core').task(':clean')
+}
+
+task bootJar {
+    dependsOn gradle.includedBuild('terabizcloud-core').task(':bootJar')
+}
+
+task jibDockerBuild {
+    dependsOn gradle.includedBuild('terabizcloud-core').task(':jibDockerBuild')
+}
+
+wrapper {
+    gradleVersion = "6.1"
+}

@@ -26,3 +26,14 @@ hs_err_pid*
 .idea
 *.iml
 *.ipr
+
+######################
+# Gradle
+######################
+.gradle/
+/build/
+
+######################
+# Gradle Wrapper
+######################
+!gradle/wrapper/gradle-wrapper.jar
