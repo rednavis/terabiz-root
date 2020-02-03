@@ -5,6 +5,7 @@ task clean {
     dependsOn gradle.includedBuild('terabizcloud-auth').task(':clean')
     dependsOn gradle.includedBuild('terabizcloud-workflow').task(':clean')
     dependsOn gradle.includedBuild('terabizcloud-reports').task(':clean')
+    dependsOn gradle.includedBuild('terabizcloud-main').task(':clean')
 }
 
 task bootJar {
@@ -14,6 +15,7 @@ task bootJar {
     dependsOn gradle.includedBuild('terabizcloud-auth').task(':bootJar')
     dependsOn gradle.includedBuild('terabizcloud-workflow').task(':bootJar')
     dependsOn gradle.includedBuild('terabizcloud-reports').task(':bootJar')
+    dependsOn gradle.includedBuild('terabizcloud-main').task(':bootJar')
 }
 
 task jibDockerBuild {
@@ -23,6 +25,7 @@ task jibDockerBuild {
     dependsOn gradle.includedBuild('terabizcloud-auth').task(':jibDockerBuild')
     dependsOn gradle.includedBuild('terabizcloud-workflow').task(':jibDockerBuild')
     dependsOn gradle.includedBuild('terabizcloud-reports').task(':jibDockerBuild')
+    dependsOn gradle.includedBuild('terabizcloud-main').task(':jibDockerBuild')
 }
 
 wrapper {
@@ -33,4 +36,5 @@ wrapper {
     dependsOn gradle.includedBuild('terabizcloud-auth').task(':wrapper')
     dependsOn gradle.includedBuild('terabizcloud-workflow').task(':wrapper')
     dependsOn gradle.includedBuild('terabizcloud-reports').task(':wrapper')
+    dependsOn gradle.includedBuild('terabizcloud-main').task(':wrapper')
 }
