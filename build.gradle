@@ -1,15 +1,36 @@
 task clean {
     dependsOn gradle.includedBuild('terabizcloud-core').task(':clean')
+    dependsOn gradle.includedBuild('terabizcloud-batch').task(':clean')
+    dependsOn gradle.includedBuild('terabizcloud-messaging').task(':clean')
+    dependsOn gradle.includedBuild('terabizcloud-auth').task(':clean')
+    dependsOn gradle.includedBuild('terabizcloud-workflow').task(':clean')
+    dependsOn gradle.includedBuild('terabizcloud-reports').task(':clean')
 }
 
 task bootJar {
     dependsOn gradle.includedBuild('terabizcloud-core').task(':bootJar')
+    dependsOn gradle.includedBuild('terabizcloud-batch').task(':bootJar')
+    dependsOn gradle.includedBuild('terabizcloud-messaging').task(':bootJar')
+    dependsOn gradle.includedBuild('terabizcloud-auth').task(':bootJar')
+    dependsOn gradle.includedBuild('terabizcloud-workflow').task(':bootJar')
+    dependsOn gradle.includedBuild('terabizcloud-reports').task(':bootJar')
 }
 
 task jibDockerBuild {
     dependsOn gradle.includedBuild('terabizcloud-core').task(':jibDockerBuild')
+    dependsOn gradle.includedBuild('terabizcloud-batch').task(':jibDockerBuild')
+    dependsOn gradle.includedBuild('terabizcloud-messaging').task(':jibDockerBuild')
+    dependsOn gradle.includedBuild('terabizcloud-auth').task(':jibDockerBuild')
+    dependsOn gradle.includedBuild('terabizcloud-workflow').task(':jibDockerBuild')
+    dependsOn gradle.includedBuild('terabizcloud-reports').task(':jibDockerBuild')
 }
 
 wrapper {
     gradleVersion = "6.1"
+    dependsOn gradle.includedBuild('terabizcloud-core').task(':wrapper')
+    dependsOn gradle.includedBuild('terabizcloud-batch').task(':wrapper')
+    dependsOn gradle.includedBuild('terabizcloud-messaging').task(':wrapper')
+    dependsOn gradle.includedBuild('terabizcloud-auth').task(':wrapper')
+    dependsOn gradle.includedBuild('terabizcloud-workflow').task(':wrapper')
+    dependsOn gradle.includedBuild('terabizcloud-reports').task(':wrapper')
 }
