@@ -1,0 +1,21 @@
+{
+  "generator-jhipster": {
+    "appsFolders": [
+      "terabizcloud-admin",
+      "terabizcloud-auth",
+      "terabizcloud-batch",
+      "terabizcloud-client-portal",
+      "terabizcloud-core",
+      "terabizcloud-main",
+      "terabizcloud-messaging",
+      "terabizcloud-reports",
+      "terabizcloud-workflow"
+    ],
+    "directoryPath": "../",
+    "gatewayType": "zuul",
+    "monitoring": "no",
+    "consoleOptions": [],
+    "serviceDiscoveryType": "eureka",
+    "jwtSecretKey": "OTFhMGRmYTRmZWU3ZjJmNTY5NThiMTNmYTNmYTc5YTRiNjQ0ZjA0YTRjZjI1ZjdkNmY0NDNkOWZlNmQ1ZDVjNGUzZmYzNDUzZTNlNDMxMzdjMjRkZTY4MTliMTRlYzc4Y2ZhNw=="
+  }
+}

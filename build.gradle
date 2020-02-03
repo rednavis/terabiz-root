@@ -20,7 +20,6 @@ task bootJar {
     dependsOn gradle.includedBuild('terabizcloud-main').task(':bootJar')
     dependsOn gradle.includedBuild('terabizcloud-admin').task(':bootJar')
     dependsOn gradle.includedBuild('terabizcloud-client-portal').task(':bootJar')
-
 }
 
 task jibDockerBuild {
